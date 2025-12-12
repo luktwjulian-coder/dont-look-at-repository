@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)file:///Users/lindseyng/Desktop/coding/CX.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title> SQ </title>
+	<link rel="stylesheet" href="substyle6767.css">
+	<style>
+	.container{
+			background-color: #00256B;
+		}
+
+		.pictures{
+			 background-color: #00256B;
+		}
+
+		 p{
+			color: white;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="pictures">
+		<div class="alliancesandawards">
+				<div class="awards">
+				<img src="AWARD.jpeg">
+				</div>
+				<div class="alliances">
+				<img src="star-alliances.jpeg">
+				</div>
+		</div>
+	
+	<div class="carousel">
+			<div class="slides"><img src="SQ.jpeg"> </div>
+			<div class="slides"><img src="SQ.jpg"> </div>
+			<div class="slides"><img src="new-busineess-class.jpeg"> </div>
+
+
+
+		</div>
+	</div>
+
+		<div class="explantion">
+			<p> Singapore Airlines (SIA) is the flagship carrier of Singapore, renowned for its exceptional service and premium travel experience. Established in 1947, the airline has grown to become one of the most respected and awarded airlines in the world.
+
+			</p>
+			<button on onclick="back()"> Click me to learn more about diffrent airlines!</button>
+		</div>
+</div>
+<script> 
+
+	let currentslide = 0;
+	const slides = document.querySelectorAll('.slides');
+	const totalslides = slides.length;
+
+ 	setInterval(()  =>{
+ 		slides[currentslide].style.display = 'none';
+ 		currentslide = (currentslide + 1) % totalslides;
+ 		slides[currentslide].style.display = 'block';
+ 	}, 6700
+ 		);
+ 		function back(){
+ 		window.location.href = "main.html";
+ 	}
+ 	
+
+
+
+
+</script>
+
+</body></html>
+
+
+
+
+
