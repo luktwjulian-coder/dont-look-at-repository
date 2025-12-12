@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)file:///Users/lindseyng/Desktop/coding/CX.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title> Qatar airways </title>
+	<link rel="stylesheet" href="substyle6767.css">
+	<style>
+	.container{
+			background-color: #5C0731;
+		}
+
+		.pictures{
+			 background-color: #5C0731;
+		}
+
+		 p{
+			color: white;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="pictures">
+		<div class="alliancesandawards">
+				<div class="awards">
+				<img src="AWARD.jpeg">
+				</div>
+				<div class="alliances">
+				<img src="OW.jpeg">
+				</div>
+		</div>
+	
+	<div class="carousel">
+			<div class="slides"><img src="QR.jpg"> </div>
+			<div class="slides"><img src="QRimage.jpeg"> </div>
+			<div class="slides"><img src="QR!.jpeg"> </div>
+
+
+
+		</div>
+	</div>
+
+		<div class="explantion">
+			<p> Qatar Airways is the state-owned flag carrier of Qatar, headquartered in Doha. Established in 1993, the airline has rapidly grown to become one of the world's leading airlines, known for its high-quality service and extensive global network.
+
+			</p>
+			<button on onclick="back()"> Click me to learn more about diffrent airlines!</button>
+		</div>
+</div>
+<script> 
+
+	let currentslide = 0;
+	const slides = document.querySelectorAll('.slides');
+	const totalslides = slides.length;
+
+ 	setInterval(()  =>{
+ 		slides[currentslide].style.display = 'none';
+ 		currentslide = (currentslide + 1) % totalslides;
+ 		slides[currentslide].style.display = 'block';
+ 	}, 6767
+ 		);
+
+ 	function back(){
+ 		window.location.href = "main.html";
+ 	}
+ 	
+
+
+
+
+</script>
+
+</body></html>
+
+
+
+
+
+
+
+

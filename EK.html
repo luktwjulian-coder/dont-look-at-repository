@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)file:///Users/lindseyng/Desktop/coding/CX.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title> Emirates </title>
+	<link rel="stylesheet" href="substyle6767.css">
+	<style>
+		.container{
+			background-color: #FF0000;
+		}
+
+		.pictures{
+			 background-color: #FF0000;
+		}
+
+		.explanation{
+			color:white;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="pictures">
+		<div class="alliancesandawards">
+				<div class="awards">
+				<img src="AWARD.jpeg">
+				</div>
+		</div>
+	
+	<div class="carousel">
+			<div class="slides"><img src="EK.jpg"> </div>
+			<div class="slides"><img src="Ek1.jpeg"> </div>
+			<div class="slides"><img src="EKimage.jpeg"> </div>
+
+
+
+		</div>
+	</div>
+
+		<div class="explantion">
+			<p> Emirates is the flagship airline of the United Arab Emirates, based in Dubai. Founded in 1985, Emirates has grown to become one of the largest and most recognized airlines in the world, known for its exceptional service and extensive global network.
+			see other Skytrax
+			</p>
+			<button on onclick="back()"> Click me to learn more about diffrent airlines!</button>
+		</div>
+</div>
+<script> 
+
+	let currentslide = 0;
+	const slides = document.querySelectorAll('.slides');
+	const totalslides = slides.length;
+
+ 	setInterval(()  =>{
+ 		slides[currentslide].style.display = 'none';
+ 		currentslide = (currentslide + 1) % totalslides;
+ 		slides[currentslide].style.display = 'block';
+ 	}, 6700
+ 		);
+ 	function back(){
+ 		window.location.href = "main.html";
+ 	}
+ 	
+
+
+
+
+</script>
+
+</body></html>
+
+
+
+
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)file:///Users/lindseyng/Desktop/coding/CX.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title> All Nippon Airways</title>
+	<link rel="stylesheet" href="substyle6767.css">
+	<style>
+	.container{
+			background-color: #304296;
+		}
+
+		.pictures{
+			 background-color: #304296;
+		}
+
+		 p{
+			color: white;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="pictures">
+		<div class="alliancesandawards">
+				<div class="awards">
+				<img src="AWARD.jpeg">
+				</div>
+				<div class="alliances">
+				<img src="star-alliances.jpeg">
+				</div>
+		</div>
+	
+	<div class="carousel">
+			<div class="slides"><img src="ANA.jpg"> </div>
+			<div class="slides"><img src="ANA1.jpeg"> </div>
+			<div class="slides"><img src="ANAPICKACHU.jpeg"> </div>
+
+
+
+		</div>
+	</div>
+
+		<div class="explantion">
+			<p> All Nippon Airways (ANA) is the largest airline in Japan, established in 1952. Known for its exceptional service and commitment to quality, ANA is a prominent member of the Star Alliance and has earned a reputation as one of the world's leading airlines.
+
+			</p>
+			<button on onclick="back()"> Click me to learn more about diffrent airlines!</button>
+		</div>
+</div>
+<script> 
+
+	let currentslide = 0;
+	const slides = document.querySelectorAll('.slides');
+	const totalslides = slides.length;
+
+ 	setInterval(()  =>{
+ 		slides[currentslide].style.display = 'none';
+ 		currentslide = (currentslide + 1) % totalslides;
+ 		slides[currentslide].style.display = 'block';
+ 	}, 6700
+ 		);
+ 	function back(){
+ 		window.location.href = "main.html";
+ 	}
+ 	
+
+
+
+
+</script>
+
+</body></html>
+
+
+
+
+

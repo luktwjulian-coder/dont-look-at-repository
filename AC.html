@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)file:///Users/lindseyng/Desktop/coding/CX.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title> Air canada </title>
+	<link rel="stylesheet" href="substyle6767.css">
+	<style>
+		.container{
+			background-color:#FFFFFF33;
+		}
+
+		.pictures{
+			 background-color: #FFFFFF;
+		}
+
+		.explanation{
+			color: #FFFFFF;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="pictures">
+		<div class="acaward">
+				<div class="acalliance">
+				<img src="OW.jpeg">
+				</div>
+		</div>
+	
+	<div class="carousel">
+			<div class="slides"><img src="AC.jpg"> </div>
+			<div class="slides"><img src="ACimage.jpeg"> </div>
+			<div class="slides"><img src="ACimage1.jpg"> </div>
+
+
+
+		</div>
+	</div>
+
+		<div class="explantion">
+			<p> Air Canada is the largest airline and the flag carrier of Canada, established in 1937. Based in Montreal, it operates a vast network of domestic and international flights, making it a key player in the global aviation market.
+			see other airlines
+			</p>
+
+ 	<button on onclick="back()"> Click me to learn more about diffrent airlines!</button>
+ 
+		</div>
+</div>
+<script> 
+
+	let currentslide = 0;
+	const slides = document.querySelectorAll('.slides');
+	const totalslides = slides.length;
+
+ 	setInterval(()  =>{
+ 		slides[currentslide].style.display = 'none';
+ 		currentslide = (currentslide + 1) % totalslides;
+ 		slides[currentslide].style.display = 'block';
+ 	}, 6700
+ 		);
+ 	function back(){
+ 		window.location.href = "main.html";
+ 	}
+ 	
+
+
+
+
+</script>
+
+</body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
